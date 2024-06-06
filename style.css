@@ -1,3 +1,31 @@
+/* ... (reglas de estilo existentes) ... */
+
+/* Animaciones */
+.t1, .COVID-19, .INICIOS_DE_PANDEMIA {
+  opacity: 0;             /* Inicialmente invisible */
+  animation: fadeInUp 1s forwards; /* Animación de aparición */
+}
+
+.virus, .mundo, .corona, .seguridad {
+  opacity: 0;
+  transform: translateY(-20px); /* Desplazamiento inicial hacia arriba */
+  animation: slideInDown 1s forwards; /* Animación de deslizamiento */
+}
+
+@keyframes fadeInUp {  /* Definición de la animación de aparición */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown { /* Definición de la animación de deslizamiento */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 html {
   background: rgb(15, 123, 159);
   background: linear-gradient(0deg, rgb(15, 123, 159) 0%, rgb(255, 192, 203) 100%);
