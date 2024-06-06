@@ -11,6 +11,7 @@ html {
 }
 
 .heading {
+    width: 100%;
     text-align: center;
     color: beige;
     border-radius: 30px;
@@ -18,8 +19,15 @@ html {
     background-color: rgb(233, 124, 148);
     padding: 20px;
 }
-
-
+.atras{
+    height: 100px;
+    width: auto;
+    margin-right: 20px;
+}
+.btn_a{
+    display: flex;
+    
+}
 
 .gif-container {
     border-radius: 30px;
