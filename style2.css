@@ -1,6 +1,6 @@
 html {
     background: rgb(240,225,114);
-    background: linear-gradient(0deg, rgb(158, 225, 245) 0%, rgb(253, 29, 134) 100%);
+    background: linear-gradient(0deg, rgb(229, 238, 241) 0%, rgb(93, 153, 231) 100%);
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -16,11 +16,11 @@ html {
     color: beige;
     border-radius: 30px;
     
-    background-color: rgb(233, 124, 148);
+    background-color: rgb(8, 24, 10);
     padding: 20px;
 }
 .atras{
-    height: 100px;
+    height: 50px;
     width: auto;
     margin-right: 20px;
 }
@@ -94,5 +94,4 @@ html {
     background-color: #eaeaea;
     padding: 20px;
 }
-
 

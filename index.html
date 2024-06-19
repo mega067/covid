@@ -9,15 +9,21 @@
   <div class="content">
     
     <div class="text-container">
-      <h1 class="t1">COVID-19</h1>
+      <div class="ali_h1">
+      <h1 class="t1_2">CORONAVIRUS</h1>
+   
+      <img src="virus.jpeg" class="virus" width="300" height="auto">
+      <h1 class="t1" id="t1">COVID-19</h1>
+       </div>
       <p class="COVID-19">A principios de diciembre de 2019, se desató una neumonía de origen desconocido en la ciudad de WUHAN (China). No se tardó mucho en encontrar cierto paralelismo con las epidemias previas de coronavirus del síndrome respiratorio.</p>
       <p class="extended-text COVID-19" style="display: none;">El COVID-19 es una nueva forma de la enfermedad del Coronavirus la cual se debe al nuevo virus SARS-CoV2 que causa una infección aguda con síntomas respiratorios. Este nuevo-virus es diferente de los que causan el SARS (Síndrome Respiratorio Agudo Severo) o el MERS (Síndrome Respiratorio del Medio Oriente). También es diferente del Coronavirus que causa la infección estacional en los EE.UU.</p>
       <a href="#" onclick="showExtendedText(event, 'COVID-19')">Leer mas</a>
     </div>
-    <img src="virus.jpeg" class="virus" width="300" height="auto">
   </div>
+    
+  
 
-  <div>
+  <div class="parte2">
     <h2 class="h2">INICIO DE PANDEMIA </h2>
   </div>
   <div class="contenedor1">
@@ -43,6 +49,26 @@
         diciembre estemos alcanzando los 1.000.000 casos y
         las muertes asciendan a más de 125 mil. </p>
       <a href="#" onclick="showExtendedText(event, 'INICIOS_DE_PANDEMIA')">Leer más</a>
+      <script>
+      function showExtendedText(event, className) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+      
+        // Muestra u oculta el texto extendido correspondiente al clic
+        const extendedText = document.querySelector('.extended-text.' + className);
+        const link = event.target;
+      
+        if (extendedText.style.display === 'none') {
+          extendedText.style.display = 'block';
+          link.textContent = 'Leer menos';
+          link.parentNode.appendChild(link); // Mueve el enlace al final del contenedor
+        } else {
+          extendedText.style.display = 'none';
+          link.textContent = 'Leer más';
+          link.parentNode.appendChild(link); // Mueve el enlace al final del contenedor
+        }
+      }
+      </script>
+      
     </div>
   </div>
   
@@ -51,7 +77,8 @@
   <div class="secun">
 
   <div class="table">
-    <img src="seguridad.png" class="seguridad" width="600" height="auto">
+    
+
     
     <table class="tb_1">
         <thead>
@@ -61,35 +88,51 @@
         </thead>
         <tbody>
             <tr>
-                <td><a href="Alpha.html" >Alpha (B.11.7)</a></td>
+                <td><a href="Alpha.html" id="a">Alpha (B.11.7)</a></td>
             </tr>
             <tr>
-              <td><a href="Gamma.html" >Gamma (P.1)</a></td>
+              <td><a href="Gamma.html" id="a" >Gamma (P.1)</a></td>
             </tr>
             <tr>
-              <td><a href="Beta.html" >Beta (B.1.351)</a></td>
+              <td><a href="Beta.html" id="a" >Beta (B.1.351)</a></td>
             </tr>
             <tr>
-              <td><a href="Delta.html" >Delta (B.1617.2)</a></td>
+              <td><a href="Delta.html" id="a">Delta (B.1617.2)</a></td>
             </tr>
             <tr>
-              <td><a href="Omicron.html" >Omicron (BA.2.86)</a></td>
+              <td><a href="Omicron.html" id="a">Omicron (BA.2.86)</a></td>
             </tr>
             <tr>
-              <td><a href="Alfa.html" >Alfa (B.1.1.7 y Q)</a></td>
+              <td><a href="Alfa.html" id="a" >Alfa (B.1.1.7 y Q)</a></td>
             </tr>
             <tr>
-              <td><a href="Epsilon.html" >Epsilon (B.1.43)</a></td>
+              <td><a href="Epsilon.html" id="a">Epsilon (B.1.43)</a></td>
             </tr>
 
 
             <!-- Puedes agregar más filas según sea necesario -->
         </tbody>
     </table>
+    <img src="corona.jpg" class="corona" width="450" height="auto">
 </div>
 
-  <div>
-    <img src="corona.jpg" class="corona" width="450" height="auto">
+<div class="titu_2">
+  <h1 class="titulo_2">MEDIDAS DE PREVENCIÓN COVID-19</h1>
+</div>
+  <div class="flex">
+    <img src="alumnos.jpg" alt="alumnos" class="img_alum">
+    <div>
+    <h1 class="p_cu" id="title" >Uso de cubrebocas</h1>
+    <p class="p_cu">El uso de cubrebocas en pandemia tiene una explicacion logica basada en prevencion de la propgacion de enfermedades.
+      <p class="extended-text p_cu"> 
+        
+        En el caso del COVID-19 este virus se propaga principalmente a atravez de gotas respiratorias
+      que se liberan al hablar toser o estormudar. Al cubrir la nariz y la boca estas gotas quedan atrapadas en el cubrebocas en lugar de dispersarce en el aire o depositarse en supeerficie, lo que reduce la la probabilidad de 
+      de que otras ersonas las inhalen o toquen. Ademas, varios estudios ha demostrado que el uso generalizado de cubrebocas en la comunidad puede ayudar a controlar la propagacion del virs, especialmente en combinacion con otras mediadas de salud publica como el dstanciamiento social y el lavado de manos frecuentes.
+    </p>
+    <a href="#" onclick="showExtendedText(event, 'p_cu')" class="p_cu" >Leer más</a>
+    </p>
+  </div>
   </div>
 </div>
 
@@ -98,12 +141,58 @@
   
 
   <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+  <div class="flex">
+  <div>
+  <h1 class="lavado"> Importancia del lavado de manos</h1> 
+  <p class="tex_lavado">Las manos constituyen a una parte corporal del cuerpo que actua como "vinculo" transmisor de germenes causantes de enfermedades.</p>
+    <p class="extended-text tex_lavado">La higiene de las manos es la 
+      mediada mas importante de prevencion para evitar la transmicion de agentes patogenos como el COVID-19. El lavado de mans con agua y jabon es uno de los metodos mas eficaces y asequibles, para lograr
+    la reduccion de microorganismos patogenos y de esta manera disminuir la aparicon de enfermedades transmisibles por via cutaneo-mucuosa</p>
+    <a href="#" onclick="showExtendedText(event, 'tex_lavado')" class="p_cu" >Leer más</a>
+  </div>
+        <div class="imge" >
+    <img src="lavado 3.jpg" class="lavado_3">
+  </div>
+</div>
+
+
+<div class="flex">
+  <div class="imge" >
+    <img src="sana distancia.jpg" class="distancia_">
+  </div>
+  <div>
+  <h1 class="lavado"> Sana distancia</h1> 
+  <p class="tex_distancia">La "sana distancia" es mantener al menos 1 metro de distancia entre personas para reducir la propagacion de covid-19.</p>
+    <p class="extended-text tex_distancia">Este enfoque ayuda a evitar el cotacto con gaticulas respiratorias contgiosas y se ecomiendan lugares publicos
+      y cerrados. Junto al uso de mascarillas y el lavado de manos, la sana distancia es clave para protegerse y proteger a los demas especialmente a personas vulnerabes.
+    </p>
+    <a href="#" onclick="showExtendedText(event, 'tex_distancia')" class="p_cu" >Leer más</a>
+  </div>
+        
+</div>
 </body>
-<footer class="pie"> 
-  <a href="https://github.com/mega067/mega067.github.io">
-  <img class="git"src="git.png" alt="git" >
-  <p class="git">github</p>
-</a>
-<p>Proyecto echo por Angel Y michellel</p>
-</footer>
+
 </html>
+<script>
+  window.addEventListener('load', () => {
+    const elementsToAnimate = document.querySelectorAll('.t1, .COVID-19, .INICIOS_DE_PANDEMIA, img, a , p , img'); // Seleccionar también imágenes
+  
+    elementsToAnimate.forEach(element => {
+      if (element.tagName === 'IMG') {
+        // Animación para imágenes: deslizamiento desde arriba
+        element.style.opacity = 0;
+        element.style.transform = 'translateY(-20px)';
+        setTimeout(() => {
+          element.style.opacity = 1;
+          element.style.transform = 'translateY(0)';
+        }, 600); // Retraso de 500ms para las imágenes
+      } else {
+        // Animación para texto: aparición gradual
+        element.style.opacity = 0;
+        setTimeout(() => {
+          element.style.opacity = 1;
+        }, 2000); // Retraso de 1000ms para el texto
+      }
+    });
+  });
+  </script>

@@ -27,15 +27,30 @@
 }
 
 html {
-  background: rgb(15, 123, 159);
-  background: linear-gradient(0deg, rgb(15, 123, 159) 0%, rgb(255, 192, 203) 100%);
+  
+  background: linear-gradient(0deg, rgb(234, 238, 240) 0%, rgb(122, 190, 245) 100%);
+}
+.virus{
+   height: 300px;
+   width: auto;
+
+}
+#t1{
+  text-align: left;
+}
+.ali_h1{
+align-items: center;
+text-align: center;
+}
+.parte2{
+  margin-top: 50px;
 }
 
 
 .t1 {
-  color: red;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px; /* Cambia el tamaño de la fuente aquí */
+  color: rgb(3, 3, 3);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 60px; /* Cambia el tamaño de la fuente aquí */
 }
 
 
@@ -57,6 +72,7 @@ p.INICIOS_DE_PANDEMIA {
   text-align: left;
   margin-right: 10px;
   padding: 0;
+  font-size: 28px;
 }
 
 img{
@@ -121,19 +137,23 @@ margin-left: 325px;
 }
 
 .table th, .table td {
-  border: 1px solid #dddddd;
+  border: 1px solid #000000;
   padding: 8px;
   text-align: left;
 }
+#a{
+  color: #ff1489;
+
+}
 
 .table th {
-  background-color: #f2f2f2;
+  background-color: #1495ff;
 }
 .tb_1{
   margin-left: 200px; /* Espacio entre la imagen y la tabla */
 }
 .secun{
-
+ margin-top: 100px;
   align-items: center;
 }
 .git{
@@ -173,4 +193,56 @@ footer {
 .pie p { /* Seleccionar el párrafo dentro del pie de página */
   margin: 0; /* Eliminar márgenes predeterminados */
   text-align: center; /* Mantener el texto centrado */
+}
+@font-face {
+
+  font-family: t1;
+  src: url(t1.ttf);
+}
+.img_alum{
+  border: 2opx chartreuse;
+  margin-left: 40px;
+  margin-top: 50px;
+  height: 350px;
+  width: auto;
+}
+.flex{
+  display: flex;
+  
+}
+.p_cu{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.tex_distancia{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#title{
+  font-size: 35px;
+  text-align: center;
+}
+.lavado_3{
+  height: 300px;
+  width: auto;
+  margin: 30px; 
+}
+.tex_lavado{
+  font-size: 28px;
+}
+.distancia_{
+  height: 390px;
+  width: auto;
+  margin: 30px; 
+}
+.titulo_2{
+  text-align: center;
+}
+a,th{
+  font-size: 28px;
 }
